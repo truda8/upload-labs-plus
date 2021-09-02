@@ -6,7 +6,7 @@ services:
         volumes:
             - ./www:/www/wwwroot/upload
 
-    upload_labs:
+    nginx_upload_labs:
         image: nginx:1.20-alpine
         volumes:
             - ./nginx:/etc/nginx/templates
