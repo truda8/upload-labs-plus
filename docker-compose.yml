@@ -1,12 +1,12 @@
 version: "3"
 services:
-    phpfpm_upload_labs:
+    phpfpmuploadlabs:
         image: php:5.6-fpm-alpine
         restart: always
         volumes:
             - ./www:/www/wwwroot/upload
 
-    nginx_upload_labs:
+    nginxuploadlabs:
         image: nginx:1.20-alpine
         volumes:
             - ./nginx:/etc/nginx/templates
