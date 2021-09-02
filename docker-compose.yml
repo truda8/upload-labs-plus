@@ -1,0 +1,20 @@
+version: "3"
+services:
+    phpfpm:
+        image: php:5.6-fpm-alpine
+        restart: always
+        volumes:
+            - ./www:/www/wwwroot/upload
+
+    nginx:
+        image: nginx:1.20-alpine
+        volumes:
+            - ./nginx:/etc/nginx/templates
+            - ./www:/www/wwwroot/upload
+        ports:
+            - "8080:80"
+        environment:
+            HOST: localhost
+            PORT: 80
+            WEB_ROOT: /www/wwwroot/upload/
+            PHP_FPM: phpfpm:9000

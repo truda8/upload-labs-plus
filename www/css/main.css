@@ -1,0 +1,69 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    background-color: rgb(5, 0, 33);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.title {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.labs-list {
+    background-color: #0d1927;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 3%);
+    margin-bottom: 20px;
+}
+
+.lab-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    margin: 20px;
+    background-color: #0b073a69;
+    border-radius: 10px;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px rgb(111 251 254 / 8%),
+                -5px -5px 10px rgb(111 251 254 / 8%);
+}
+
+.lab-item:hover {
+    box-shadow: 5px 5px 10px rgb(111 251 254 / 18%),
+                -5px -5px 10px rgb(111 251 254 / 18%);
+    cursor: pointer;
+}
+
+.num {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 5rem;
+}
+
+.topic {
+    font-size: 28px;
+    color: #fff;
+}
