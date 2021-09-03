@@ -1,3 +1,7 @@
+<?php
+    header("Content-type: text/html;charset=utf-8");
+    error_reporting(0);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,8 +21,6 @@
 </head>
 <body>
     <?php
-        header("Content-type: text/html;charset=utf-8");
-        error_reporting(0);
         define("WWW_ROOT",$_SERVER['DOCUMENT_ROOT']);
         define("UPLOAD_PATH", "./upload");
         

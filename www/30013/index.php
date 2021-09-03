@@ -1,3 +1,7 @@
+<?php
+    header("Content-type: text/html;charset=utf-8");
+    error_reporting(0);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,8 +22,6 @@
 </head>
 <body>
     <?php
-        header("Content-type: text/html;charset=utf-8");
-        error_reporting(0);
         //设置上传目录
         define("UPLOAD_PATH", dirname(__FILE__) . "/upload/");
         define("UPLOAD_URL_PATH", str_replace($_SERVER['DOCUMENT_ROOT'], "", UPLOAD_PATH));
