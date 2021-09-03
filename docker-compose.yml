@@ -1,12 +1,12 @@
 version: "3"
 services:
-    phpfpmuploadlabs:
+    pful:
         image: php:5.6-fpm-alpine
         restart: always
         volumes:
             - ./www:/www/wwwroot/upload
 
-    nginxuploadlabs:
+    nul:
         image: nginx:1.20-alpine
         volumes:
             - ./nginx:/etc/nginx/templates
@@ -17,4 +17,4 @@ services:
             HOST: localhost
             PORT: 80
             WEB_ROOT: /www/wwwroot/upload/
-            PHP_FPM: phpfpm_upload_labs:9000
+            PHP_FPM: pful:9000
